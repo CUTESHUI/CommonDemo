@@ -12,9 +12,9 @@ import java.util.Enumeration;
 /**
  * @author shui
  */
-@Api(tags = "request/filter测试")
+@Api(tags = "request-filter测试")
 @RestController
-@RequestMapping("/request/filter")
+@RequestMapping("/request")
 public class RequestFilterTestController {
 
     @GetMapping("test1")
@@ -33,8 +33,8 @@ public class RequestFilterTestController {
 
     @GetMapping("test3")
     @ApiOperation("test3")
-    public void test3(HttpServletRequest request) {
-        String name = request.getParameter("name");
+    public String test3(HttpServletRequest request) {
+        return request.getParameter("name");
     }
 
 

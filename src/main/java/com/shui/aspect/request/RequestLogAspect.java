@@ -15,6 +15,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -65,16 +66,22 @@ public class RequestLogAspect {
 
     private Map<String, Object> getRequestParamsByProceedingJoinPoint(ProceedingJoinPoint proceedingJoinPoint) {
         //参数名
-        String[] paramNames = ((MethodSignature)proceedingJoinPoint.getSignature()).getParameterNames();
+        String[] paramNames = ((MethodSignature) proceedingJoinPoint.getSignature()).getParameterNames();
         //参数值
         Object[] paramValues = proceedingJoinPoint.getArgs();
+        for (int i = 0; i < paramValues.length; i++) {
+            Object paramValue = paramValues[i];
+            if (paramValue instanceof HttpServletRequestWrapper) {
+                paramValues[i] = "HttpServletRequest";
+            }
+        }
 
         return buildRequestParam(paramNames, paramValues);
     }
 
     private Map<String, Object> getRequestParamsByJoinPoint(JoinPoint joinPoint) {
         //参数名
-        String[] paramNames = ((MethodSignature)joinPoint.getSignature()).getParameterNames();
+        String[] paramNames = ((MethodSignature) joinPoint.getSignature()).getParameterNames();
         //参数值
         Object[] paramValues = joinPoint.getArgs();
 
