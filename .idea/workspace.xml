@@ -2,93 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/IpInterceptorTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/IpInterceptorTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/exception/HandleControllerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/filter/MyHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/filter/MyHeaderFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/utils/AESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/utils/AESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CommonDemo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/CommonDemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/annotation/IpInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/ipinterceptor/IpInterceptorAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestErrorInfo$RequestErrorInfoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestErrorInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestInfo$RequestInfoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestLogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/common/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/GlobalCorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/JsonRedisSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MicrometerRegistryConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MinioConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MyMetaObjectHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RemoveDruidAdConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RemoveDruidAdConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/DirectRabbitMQConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/FanoutRabbitMQConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/RabbitMQConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/SimpleRabbitMQConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/ElasticsearchTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/IpInterceptorTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MailTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MinioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MybatisPlusTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RabbitMQTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RedisTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RequestFilterTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/SecurityTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MailDTO$MailDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MailDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MinioProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/UserElastic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/BaseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorCodeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorReponse$ErrorReponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorReponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/FilterExceptionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/HandleControllerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/IpExcetion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/FilterConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyExceptionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyHeaderFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyHeaderHttpServletRequestWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MySensitiveWordFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MySensitiveWordHttpServletRequestWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/search/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/DirectRabbitMQListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/FanoutRabbitMQListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/SimpleRabbitMQListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/mail/MailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/BlackUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/LotteryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/RedBagServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/AESUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ConvertUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$ICallBack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ProtostuffUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SpringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/AESUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/utils/AESUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,12 +20,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
               <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2809" />
           </provider>
         </entry>
       </file>
@@ -123,10 +49,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/AESUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="884">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="811" column="4" selection-start-line="811" selection-start-column="4" selection-end-line="813" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/SignatureUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1274">
+              <caret line="49" selection-start-line="49" selection-end-line="49" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
+              <folding>
+                <element signature="e#2021#2022#0" expanded="true" />
+                <element signature="e#2068#2069#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -272,8 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,12 +279,34 @@
               <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,6 +321,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shui" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -547,6 +528,7 @@
       <workItem from="1626406338461" duration="1483000" />
       <workItem from="1626752572176" duration="2979000" />
       <workItem from="1626762534208" duration="192000" />
+      <workItem from="1626852129639" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1625633216366</created>
@@ -559,13 +541,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111878000" />
+    <option name="totallyTimeSpent" value="112344000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="25" width="1394" height="875" extended-state="0" />
-    <editor active="true" />
+    <frame x="46" y="25" width="1874" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49736148" visible="true" weight="0.23621461" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49736148" visible="true" weight="0.17727771" />
       <window_info id="Structure" order="1" sideWeight="0.5026385" side_tool="true" weight="0.24739195" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -580,7 +561,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.6609499" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32717678" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7345416" />
       <window_info anchor="bottom" id="Docker" order="8" weight="0.3298153" />
       <window_info anchor="bottom" id="Sequence" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -651,16 +632,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/filter/MySensitiveWordFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="22" column="135" selection-start-line="22" selection-start-column="135" selection-end-line="22" selection-end-column="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -855,23 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/SignatureUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="49" selection-start-line="49" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="811" column="4" lean-forward="true" selection-start-line="811" selection-start-column="4" selection-end-line="813" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/exception/HandleControllerException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/exception/ErrorReponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -908,11 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/OkHttpTestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1538">
@@ -924,17 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-650">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
-          <folding>
-            <element signature="e#2021#2022#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,6 +937,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommonDemo.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RequestFilterTestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -1016,23 +964,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CommonDemo.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2809" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/AESUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="884">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="697">
+          <caret line="811" column="4" selection-start-line="811" selection-start-column="4" selection-end-line="813" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/SignatureUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1274">
+          <caret line="49" selection-start-line="49" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
+          <folding>
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2068#2069#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
