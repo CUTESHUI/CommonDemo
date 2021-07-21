@@ -21,8 +21,8 @@ public class IpInterceptorTestController {
     @GetMapping(value = "/test1/{id}")
     @ApiOperation("test1")
     @IpInterceptor(requestCounts = 3, expiresTimeSecond = 3, isRestful = true, restfulParamCounts = 1)
-    public Result test1(@PathVariable("id") String id) {
-        return new Result().ok("处理成功--->" + id);
+    public String test1(@PathVariable("id") String id) {
+        return "处理成功--->" + id;
     }
 
 }

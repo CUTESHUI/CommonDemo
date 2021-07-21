@@ -58,34 +58,34 @@ public class RedisTestController {
     @GetMapping("lottery")
     @ApiOperation("抽奖Set")
     @IpInterceptor(requestCounts = 3, expiresTimeSecond = 10, isRestful = true, restfulParamCounts = 0)
-    public Result<String> lottery() {
-        return new Result<String>().ok(lotteryService.lottery());
+    public String lottery() {
+        return lotteryService.lottery();
     }
 
 
     @GetMapping("sendRedBag")
     @ApiOperation("发红包")
     @IpInterceptor(requestCounts = 1, expiresTimeSecond = 1, isRestful = true, restfulParamCounts = 2)
-    public Result<String> sendRedBag(@ApiParam("红包总额") @RequestParam("total") Integer total, @ApiParam("红包个数") @RequestParam("count") Integer count) {
-        return new Result<String>().ok(redBagService.sendRedBag(total, count));
+    public String sendRedBag(@ApiParam("红包总额") @RequestParam("total") Integer total, @ApiParam("红包个数") @RequestParam("count") Integer count) {
+        return redBagService.sendRedBag(total, count);
     }
 
     @GetMapping("grabRedBag")
     @ApiOperation("抢红包")
-    public Result<String> grabRedBag(@ApiParam("红包Id") @RequestParam("redBagId") Long redBagId, @ApiParam("用户Id") @RequestParam("userId") Long userId) {
-        return new Result<String>().ok(redBagService.grabRedBag(redBagId, userId));
+    public String grabRedBag(@ApiParam("红包Id") @RequestParam("redBagId") Long redBagId, @ApiParam("用户Id") @RequestParam("userId") Long userId) {
+        return redBagService.grabRedBag(redBagId, userId);
     }
 
     @GetMapping("addBlackUser")
     @ApiOperation("添加黑名单用户")
-    public Result<String> addBlackUser(@ApiParam("用户Id") @RequestParam("userId") Long userId) {
-        return new Result<String>().ok(blackUserService.addBlackUser(userId));
+    public String addBlackUser(@ApiParam("用户Id") @RequestParam("userId") Long userId) {
+        return blackUserService.addBlackUser(userId);
     }
 
     @GetMapping("removeBlackUser")
     @ApiOperation("移除黑名单用户")
-    public Result<String> removeBlackUser(@ApiParam("用户Id") @RequestParam("userId") Long userId) {
-        return new Result<String>().ok(blackUserService.removeBlackUser(userId));
+    public String removeBlackUser(@ApiParam("用户Id") @RequestParam("userId") Long userId) {
+        return blackUserService.removeBlackUser(userId);
     }
 
 

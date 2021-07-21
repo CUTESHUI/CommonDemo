@@ -1,6 +1,5 @@
 package com.shui.utils;
 
-import com.sun.istack.internal.NotNull;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
@@ -34,11 +33,8 @@ public class AESUtil {
 
     /**
      * 加密
-     *
-     * @param content
-     * @return
      */
-    public String encrypt(@NotNull String content) {
+    public String encrypt(String content) {
         byte[] result = null;
         try {
             Cipher cipher = Cipher.getInstance(ALGORITHM);
@@ -54,11 +50,8 @@ public class AESUtil {
 
     /**
      * 解密
-     *
-     * @param content
-     * @return
      */
-    public String decrypt(@NotNull String content) {
+    public String decrypt(String content) {
         try {
             Cipher cipher = Cipher.getInstance(ALGORITHM);
             SecretKeySpec keySpec = new SecretKeySpec(KEY.getBytes(CHARSET_NAME), AES_NAME);

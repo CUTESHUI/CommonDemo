@@ -1,5 +1,8 @@
-package com.shui.exception;
+package com.shui.component;
 
+import com.shui.exception.BaseException;
+import com.shui.exception.ErrorReponse;
+import com.shui.exception.IpExcetion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
