@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
+import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -22,9 +23,11 @@ public class User implements Serializable {
     @ApiModelProperty("主键")
     private Long id;
 
+    @NotBlank
     @ApiModelProperty("姓名")
     private String name;
 
+    @NotBlank
     @ApiModelProperty("密码")
     private String password;
 

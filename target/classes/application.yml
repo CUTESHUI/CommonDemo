@@ -19,6 +19,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
       url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
       username: root
       password: chimanloo1004
@@ -104,7 +105,7 @@ spring:
     username: 1051800045@qq.com
     password: ejychtrurmyibbad
 
-  # minio
+# minio
 minio:
   endpoint: http://127.0.0.1:9000
   accesskey: admin
