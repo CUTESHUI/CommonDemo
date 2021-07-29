@@ -37,5 +37,17 @@ public class RequestFilterTestController {
         return request.getParameter("name");
     }
 
+    @GetMapping("test4")
+    @ApiOperation("test4")
+    public String test4(HttpServletRequest request) {
+        return getDomain(request);
+    }
+
+
+    public static String getDomain(HttpServletRequest request) {
+        StringBuffer url = request.getRequestURL();
+        String contextPath = request.getServletContext().getContextPath();
+        return url.delete(url.length() - request.getRequestURI().length(), url.length()).append(contextPath).toString();
+    }
 
 }
