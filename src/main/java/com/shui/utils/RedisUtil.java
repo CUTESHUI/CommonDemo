@@ -1,4 +1,4 @@
-package com.wf.ew.core.utils;
+package com.shui.utils;
 
 import org.springframework.data.redis.connection.DataType;
 import org.springframework.data.redis.core.Cursor;
