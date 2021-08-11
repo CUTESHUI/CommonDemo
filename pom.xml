@@ -28,6 +28,8 @@
         <okhttp3>3.10.0</okhttp3>
         <minio>7.0.1</minio>
         <protostuff>1.7.2</protostuff>
+        <easypoi>4.2.0</easypoi>
+        <screw>1.0.5</screw>
     </properties>
 
     <dependencies>
@@ -63,6 +65,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druid}</version>
+        </dependency>
+        <!-- 数据库文档生成 -->
+        <dependency>
+            <groupId>cn.smallbun.screw</groupId>
+            <artifactId>screw-core</artifactId>
+            <version>${screw}</version>
         </dependency>
         <!-- 数据库相关 end -->
 
@@ -193,12 +201,13 @@
         </dependency>
         <!-- protostuff end-->
 
-
+        <!-- 加密解密 start-->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk16</artifactId>
             <version>1.46</version>
         </dependency>
+        <!-- 加密解密 end-->
 
         <!-- 校验 start-->
         <dependency>
@@ -211,19 +220,20 @@
         <dependency>
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-base</artifactId>
-            <version>4.2.0</version>
+            <version>${easypoi}</version>
         </dependency>
         <dependency>
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-web</artifactId>
-            <version>4.2.0</version>
+            <version>${easypoi}</version>
         </dependency>
         <dependency>
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-annotation</artifactId>
-            <version>4.2.0</version>
+            <version>${easypoi}</version>
         </dependency>
         <!-- Excel end  -->
+
 
     </dependencies>
 
@@ -251,61 +261,6 @@
                         </resource>
                     </resources>
                 </configuration>
-            </plugin>
-
-            <!-- screw -->
-            <plugin>
-                <groupId>cn.smallbun.screw</groupId>
-                <artifactId>screw-maven-plugin</artifactId>
-                <version>1.0.5</version>
-                <dependencies>
-                    <!-- HikariCP -->
-                    <dependency>
-                        <groupId>com.zaxxer</groupId>
-                        <artifactId>HikariCP</artifactId>
-                        <version>3.4.5</version>
-                    </dependency>
-                    <!--mysql driver-->
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql-connector}</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <!--username-->
-                    <username>root</username>
-                    <!--password-->
-                    <password>chimanloo1004</password>
-                    <!--driver-->
-                    <driverClassName>com.mysql.jdbc.Driver</driverClassName>
-                    <!--jdbc url-->
-                    <jdbcUrl>jdbc:mysql://127.0.0.1:3306/test</jdbcUrl>
-                    <!--生成模板-->
-                    <produceType>freemarker</produceType>
-                    <!--文档名称 为空时:将采用[数据库名称-描述-版本号]作为文档名称-->
-                    <fileName>数据库结构文档</fileName>
-                    <!--文档路径-->
-                    <fileOutputDir>/Users/mac/IdeaProjects/CommonDemo/doc</fileOutputDir>
-                    <!--生成文件类型-->
-                    <fileType>MD</fileType>
-                    <!--打开文件输出目录-->
-                    <openOutputDir>true</openOutputDir>
-                    <!--描述-->
-                    <description>数据库设计文档生成</description>
-                    <!--版本-->
-                    <version>${project.version}</version>
-                    <!--标题-->
-                    <title>数据库文档</title>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
         </plugins>
