@@ -20,7 +20,7 @@ spring:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
 #      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
-      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+      url: jdbc:mysql://127.0.0.1:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true
       username: root
       password: chimanloo1004
 
@@ -136,3 +136,12 @@ management:
       exposure:
         include: '*'
       base-path: /metrics # 访问路径，替代默认的/actuator
+
+# 多数据源
+dynamic:
+  datasource:
+    eblog:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/eblog?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true
+      username: root
+      password: chimanloo1004
