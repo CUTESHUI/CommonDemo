@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/CommonDemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/annotation/IpInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/ipinterceptor/IpInterceptorAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestErrorInfo$RequestErrorInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestErrorInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestInfo$RequestInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/aspect/request/RequestLogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/common/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/component/GlobalResponseBodyAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/component/HandleControllerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/GlobalCorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/JsonRedisSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MicrometerRegistryConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MinioConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MyMetaObjectHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RemoveDruidAdConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RemoveDruidAdConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RestTemplateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/ValidatedConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/DirectRabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/FanoutRabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/RabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/rabbitmq/SimpleRabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/ElasticsearchTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/ExcelTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/IpInterceptorTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MailTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MinioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MybatisPlusTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/OkHttpTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RabbitMQTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RedisTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RequestFilterTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/SecurityTestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/TestDataSourceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MailDTO$MailDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MailDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/MinioProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/RyxxExcel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/UserElastic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/annotation/DataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/aspect/DataSourceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/config/DynamicContextHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/config/DynamicDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/config/DynamicDataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/config/DynamicDataSourceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/properties/DataSourceProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/dynamic/datasource/properties/DynamicDataSourceProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/BaseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorReponse$ErrorReponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/ErrorReponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/FilterExceptionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/exception/IpExcetion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/FilterConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyExceptionFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyHeaderFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MyHeaderHttpServletRequestWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MySensitiveWordFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/filter/MySensitiveWordHttpServletRequestWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/search/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/DirectRabbitMQListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/FanoutRabbitMQListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/listener/SimpleRabbitMQListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/mail/MailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/BlackUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/LotteryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/RedBagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/AESUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ConvertUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/DoubleUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ElasticSearchUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ExcelUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/IPUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/LonAndLatUtil$LonAndLat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/LonAndLatUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils$ICallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/OkHttpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ProtostuffUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/RedisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SensitiveFilter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SensitiveFilter$TrieNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SensitiveFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SignatureUtil$SHA1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SignatureUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SpringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/StringCompressUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/SystemUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sensitive-words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/ScrewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/SensitiveWordTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,35 +132,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicDataSourceConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DynamicDataSourceProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="553">
+              <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -192,88 +277,6 @@
               <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -576,7 +579,7 @@
       <workItem from="1628754182706" duration="229000" />
       <workItem from="1628829795849" duration="248000" />
       <workItem from="1629086006904" duration="76000" />
-      <workItem from="1629091522476" duration="1497000" />
+      <workItem from="1629091522476" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1625633216366</created>
@@ -592,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628666654909</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1629093133232</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629093133232</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -619,7 +629,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139678000" />
+    <option name="totallyTimeSpent" value="139903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,7 +673,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3068057" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.30674517" />
       <window_info anchor="right" id="Codota" order="4" weight="0.32935917" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -761,13 +771,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ExcelUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-185">
@@ -866,13 +869,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -978,13 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/MicrometerRegistryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/MinioConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1031,13 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="140" column="8" lean-forward="true" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1091,6 +1073,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar!/org/springframework/boot/context/properties/EnableConfigurationProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/MicrometerRegistryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/JsonRedisSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/GlobalCorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DynamicDataSourceProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1102,27 +1119,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar!/org/springframework/boot/context/properties/EnableConfigurationProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicDataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="123">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
         </state>
       </provider>
     </entry>
