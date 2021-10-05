@@ -1,9 +1,8 @@
 package com.shui.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.shui.dao.UserDao;
-import com.shui.domain.User;
+import com.shui.domain.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +25,11 @@ public class MybatisPlusTestController {
     @PostMapping("getAll")
     public List<User> getAll() {
         return userDao.getAllUser();
+    }
+
+    @PostMapping("all")
+    public List<User> all() {
+        return userDao.selectList(null);
     }
 
     @GetMapping("save")
@@ -74,6 +78,10 @@ public class MybatisPlusTestController {
         System.out.println(date);
     }
 
-
+    @GetMapping("deleteUser/{id}")
+    @ApiOperation("删除user")
+    public void deleteUser(@PathVariable("id") Integer id) {
+        userDao.deleteById(id);
+    }
 
 }

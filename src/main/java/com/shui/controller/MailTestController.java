@@ -1,8 +1,7 @@
 package com.shui.controller;
 
-import com.shui.domain.MailDTO;
+import com.shui.domain.dto.MailDTO;
 import com.shui.service.mail.MailService;
-import com.shui.utils.SpringUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

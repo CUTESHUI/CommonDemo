@@ -57,7 +57,9 @@ spring:
           merge-sql: true          # 打开mergeSql(Sql合并)功能
           log-slow-sql: true       # 慢SQL记录(配置超过5秒就是慢，默认是3秒)
           slow-sql-millis: 5000
-
+        wall:
+          config:
+            multi-statement-allow: true # 允许一次执行多条语句
 
   # elasticsearch
   data:
@@ -72,17 +74,18 @@ spring:
       uris: 127.0.0.1:9200
 
   # redis
-  redis:
-    database: 0
-    host: 127.0.0.1
-    port: 6379
-    timeout: 6000ms
-    jedis:
-      pool:
-        max-active: 1000
-        max-wait: -1ms
-        max-idle: 10
-        min-idle: 5
+#  redis:
+#    database: 0
+#    host: 127.0.0.1
+#    password:
+#    port: 6379
+#    timeout: 6000ms
+#    jedis:
+#      pool:
+#        max-active: 1000
+#        max-wait: -1ms
+#        max-idle: 10
+#        min-idle: 5
 
   # rabbitmq
   rabbitmq:
@@ -114,13 +117,16 @@ minio:
 
 # mybatis-plus
 mybatis-plus:
-  mapper-locations: classpath:/mapper/*.xml   # Mapper映射文件
-  typeAliasesPackage: com.shui.domain         # Mybatis数据返回类型别名（默认别名为类名）
+  mapper-locations: classpath*:/mapper/**/*.xml   # Mapper映射文件
+  typeAliasesPackage: com.shui.domain             # Mybatis数据返回类型别名（默认别名为类名）
   configuration:
     map-underscore-to-camel-case: true
   global-config:
     db-config:
       id-type: id_worker
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 
 logging:
   level:

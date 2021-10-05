@@ -2,7 +2,7 @@ package com.shui.controller;
 
 import com.shui.common.Result;
 import com.shui.dao.UserDao;
-import com.shui.domain.User;
+import com.shui.domain.entity.User;
 import com.shui.domain.UserElastic;
 import com.shui.search.UserRepository;
 import com.shui.utils.ConvertUtils;
@@ -10,7 +10,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

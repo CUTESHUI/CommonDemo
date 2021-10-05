@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import cn.smallbun.screw.core.Configuration;
 import cn.smallbun.screw.core.engine.EngineConfig;
@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.Collections;
 
-@SpringBootTest(classes = ScrewTest.class)
 class ScrewTest {
 
     @Test

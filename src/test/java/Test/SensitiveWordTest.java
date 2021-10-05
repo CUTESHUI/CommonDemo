@@ -1,14 +1,12 @@
-package Test;
+package test;
 
 import com.shui.CommonDemoApplication;
 import com.shui.utils.SensitiveFilter;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
 
-@ContextConfiguration(classes = CommonDemoApplication.class)
-@SpringBootTest(classes = SensitiveWordTest.class)
+@SpringBootTest(classes = CommonDemoApplication.class)
 class SensitiveWordTest {
 
     @Autowired

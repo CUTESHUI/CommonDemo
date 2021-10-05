@@ -1,9 +1,8 @@
 package com.shui.controller;
 
 import com.shui.annotation.IpInterceptor;
-import com.shui.common.Result;
 import com.shui.dao.UserDao;
-import com.shui.domain.User;
+import com.shui.domain.entity.User;
 import com.shui.service.redis.BlackUserServiceImpl;
 import com.shui.service.redis.LotteryServiceImpl;
 import com.shui.service.redis.RedBagServiceImpl;
@@ -12,7 +11,6 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

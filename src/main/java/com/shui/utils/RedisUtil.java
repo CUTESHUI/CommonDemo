@@ -1,10 +1,13 @@
 package com.shui.utils;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.DataType;
 import org.springframework.data.redis.core.Cursor;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ScanOptions;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations.TypedTuple;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Date;
@@ -18,7 +21,10 @@ import java.util.concurrent.TimeUnit;
  * Redis工具类
  *
  */
+@Component
 public class RedisUtil {
+
+    @Autowired
 	private StringRedisTemplate redisTemplate;
 
 	public void setRedisTemplate(StringRedisTemplate redisTemplate) {
