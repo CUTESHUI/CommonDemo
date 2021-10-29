@@ -12,6 +12,7 @@ class SensitiveWordTest {
     @Autowired
     private SensitiveFilter sensitiveFilter;
 
+
     @Test
     void testSensitiveFilter() {
         String text1 = "这里可以赌博、可以嫖娼、可以吸毒，哈哈！";

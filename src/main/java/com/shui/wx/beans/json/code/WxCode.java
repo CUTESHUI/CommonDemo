@@ -1,0 +1,33 @@
+package com.shui.wx.beans.json.code;
+
+import com.shui.wx.beans.json.base.BaseJsonBean;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+/**
+ * 封装微信的返回code
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
+public class WxCode extends BaseJsonBean {
+    private static final long serialVersionUID = -1280036182184419577L;
+    public static final int ERRCODE_NORMAL = 0;
+    //状态码 0：正常，其他：不正常
+    private Integer errcode = ERRCODE_NORMAL;
+    //结果消息
+    private String errmsg = "";
+
+    @Override
+    public String toString() {
+        return super.toString(this);
+    }
+
+    @Override
+    public String toJsonString() {
+        return super.toJsonString(this);
+    }
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:flowable="http://flowable.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath"
+             targetNamespace="http://www.flowable.org/processdef">
+
+    <process id="holiday-request" name="Holiday Request" isExecutable="true">
+        <startEvent id="startEvent" flowable:formFieldValidation="true"></startEvent>
+        <userTask id="approveTask" name="Approve or reject request" flowable:formFieldValidation="true"></userTask>
+        <exclusiveGateway id="decision"></exclusiveGateway>
+        <sequenceFlow id="sequenceFlow-83a446b4-de5e-4b23-8497-e46b10ce92e9" sourceRef="decision"
+                      targetRef="externalSystemCall">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${approved=='true'}]]></conditionExpression>
+        </sequenceFlow>
+        <serviceTask id="externalSystemCall" name="Enter holidays in external system"
+                     flowable:class="com.shui.flowable.callback.CallExternalSystemDelegate"></serviceTask>
+        <userTask id="holidayApprovedTask" name="Holiday Approve!" flowable:formFieldValidation="true"></userTask>
+        <sequenceFlow id="sequenceFlow-e23896d3-0ad8-4eaa-802b-07227ef12ecb" sourceRef="holidayApprovedTask"
+                      targetRef="approveEnd"></sequenceFlow>
+        <serviceTask id="sendRejectionMail" name="Send out rejection email"
+                     flowable:class="com.shui.flowable.callback.SendRejectionMail"></serviceTask>
+        <sequenceFlow id="sequenceFlow-11e44165-ba86-4f64-87f6-91ad480d0c45" sourceRef="sendRejectionMail"
+                      targetRef="rejectEnd"></sequenceFlow>
+        <endEvent id="approveEnd"></endEvent>
+        <endEvent id="rejectEnd"></endEvent>
+        <sequenceFlow id="sequenceFlow-4acbe562-8fe0-4c2f-a3c3-ef697b534dfd" sourceRef="decision"
+                      targetRef="sendRejectionMail">
+            <conditionExpression xsi:type="tFormalExpression"><![CDATA[${approved=='false'}]]></conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow id="sid-894978C8-E145-4650-9FE7-523042AC0F17" sourceRef="externalSystemCall"
+                      targetRef="holidayApprovedTask"></sequenceFlow>
+        <sequenceFlow id="sequenceFlow-03017fff-cbe5-4f71-a457-b0422cb3e257" sourceRef="startEvent"
+                      targetRef="approveTask"></sequenceFlow>
+        <sequenceFlow id="sequenceFlow-04741891-ceb8-4e5d-8745-51b37ba3264f" sourceRef="approveTask"
+                      targetRef="decision"></sequenceFlow>
+    </process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_holiday-request">
+        <bpmndi:BPMNPlane bpmnElement="holiday-request" id="BPMNPlane_holiday-request">
+            <bpmndi:BPMNShape bpmnElement="startEvent" id="BPMNShape_startEvent">
+                <omgdc:Bounds height="30.0" width="30.0" x="135.0" y="200.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="approveTask" id="BPMNShape_approveTask">
+                <omgdc:Bounds height="60.0" width="100.0" x="270.0" y="185.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="decision" id="BPMNShape_decision">
+                <omgdc:Bounds height="40.0" width="40.0" x="420.0" y="195.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="externalSystemCall" id="BPMNShape_externalSystemCall">
+                <omgdc:Bounds height="60.0" width="100.0" x="510.0" y="105.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="holidayApprovedTask" id="BPMNShape_holidayApprovedTask">
+                <omgdc:Bounds height="60.0" width="100.0" x="685.0" y="105.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="sendRejectionMail" id="BPMNShape_sendRejectionMail">
+                <omgdc:Bounds height="60.0" width="100.0" x="510.0" y="265.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="approveEnd" id="BPMNShape_approveEnd">
+                <omgdc:Bounds height="28.0" width="28.0" x="835.0" y="121.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="rejectEnd" id="BPMNShape_rejectEnd">
+                <omgdc:Bounds height="28.0" width="28.0" x="660.0" y="280.0"></omgdc:Bounds>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-e23896d3-0ad8-4eaa-802b-07227ef12ecb"
+                             id="BPMNEdge_sequenceFlow-e23896d3-0ad8-4eaa-802b-07227ef12ecb">
+                <omgdi:waypoint x="784.949999999996" y="135.0"></omgdi:waypoint>
+                <omgdi:waypoint x="835.0" y="135.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-11e44165-ba86-4f64-87f6-91ad480d0c45"
+                             id="BPMNEdge_sequenceFlow-11e44165-ba86-4f64-87f6-91ad480d0c45">
+                <omgdi:waypoint x="609.9499999999989" y="294.56140350877195"></omgdi:waypoint>
+                <omgdi:waypoint x="660.0005248012809" y="294.1223639291296"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-83a446b4-de5e-4b23-8497-e46b10ce92e9"
+                             id="BPMNEdge_sequenceFlow-83a446b4-de5e-4b23-8497-e46b10ce92e9">
+                <omgdi:waypoint x="459.9189252336448" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="472.0" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="472.0" y="135.0"></omgdi:waypoint>
+                <omgdi:waypoint x="509.9999999999769" y="135.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-04741891-ceb8-4e5d-8745-51b37ba3264f"
+                             id="BPMNEdge_sequenceFlow-04741891-ceb8-4e5d-8745-51b37ba3264f">
+                <omgdi:waypoint x="369.9499999999756" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="420.0" y="215.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-03017fff-cbe5-4f71-a457-b0422cb3e257"
+                             id="BPMNEdge_sequenceFlow-03017fff-cbe5-4f71-a457-b0422cb3e257">
+                <omgdi:waypoint x="164.9499993675608" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="270.0" y="215.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sequenceFlow-4acbe562-8fe0-4c2f-a3c3-ef697b534dfd"
+                             id="BPMNEdge_sequenceFlow-4acbe562-8fe0-4c2f-a3c3-ef697b534dfd">
+                <omgdi:waypoint x="459.9189252336448" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="472.0" y="215.0"></omgdi:waypoint>
+                <omgdi:waypoint x="472.0" y="295.0"></omgdi:waypoint>
+                <omgdi:waypoint x="509.9999999999769" y="295.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sid-894978C8-E145-4650-9FE7-523042AC0F17"
+                             id="BPMNEdge_sid-894978C8-E145-4650-9FE7-523042AC0F17">
+                <omgdi:waypoint x="609.95" y="135.0"></omgdi:waypoint>
+                <omgdi:waypoint x="684.9999999999375" y="135.0"></omgdi:waypoint>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</definitions>

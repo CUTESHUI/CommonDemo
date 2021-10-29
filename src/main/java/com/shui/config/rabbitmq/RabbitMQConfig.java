@@ -40,9 +40,4 @@ public class RabbitMQConfig {
         return rabbitTemplate;
     }
 
-    @Bean("normalRabbitTemplate")
-    public RabbitTemplate normalRabbitTemplate() {
-        // 普通只读取配置文件内容的
-        return new RabbitTemplate(connectionFactory);
-    }
 }

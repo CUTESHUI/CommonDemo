@@ -19,24 +19,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private UserDetailsService userDetailsService;
 
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
-            .authorizeRequests()
-            .antMatchers(IGNORING_URLS).permitAll()
-            .anyRequest().permitAll()
-            .and()
-            .csrf()
-            .disable();
+                .authorizeRequests()
+                .antMatchers(IGNORING_URLS).permitAll()
+                .anyRequest().permitAll()
+                .and()
+                .csrf()
+                .disable();
     }
 
     @Override
@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         web.ignoring().antMatchers("/favicon.ico", "/css/**", "/error");
     }
 
-    private static final String [] IGNORING_URLS = {
+    private static final String[] IGNORING_URLS = {
             "/actuator/**",
             "/v2/api-docs",
             "/webjars/**",

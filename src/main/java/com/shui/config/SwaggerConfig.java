@@ -1,5 +1,6 @@
 package com.shui.config;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,6 +37,18 @@ public class SwaggerConfig {
                 .enable(true)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.shui.controller"))
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    @Bean
+    public Docket flowable() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("flowable")
+                .apiInfo(apiInfo())
+                .enable(true)
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.shui.flowable.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

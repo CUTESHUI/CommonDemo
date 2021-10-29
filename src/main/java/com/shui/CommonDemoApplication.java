@@ -6,7 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @MapperScan("com.shui.dao")
-@SpringBootApplication
+@SpringBootApplication(
+        exclude = {
+                org.flowable.spring.boot.FlowableSecurityAutoConfiguration.class
+        })
 public class CommonDemoApplication {
 
     public static void main(String[] args) {

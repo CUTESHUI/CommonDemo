@@ -1,0 +1,69 @@
+package com.shui.wx.http.handler.token;
+
+import com.shui.utils.RedisUtil;
+import com.shui.wx.beans.json.token.WxAccessToken;
+import com.shui.wx.constants.WxConstants;
+import com.shui.wx.http.proxy.token.AccessTokenProxy;
+import com.shui.wx.utils.json.JsonUtils;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * 获取Access_token相关的包装类
+ */
+@Slf4j
+public class AccessTokenHandler {
+
+    @Autowired
+    private static RedisUtil redisUtil;
+
+    private static final String WX_BASE = "base";
+
+    /**
+     * 查看本地是否存在AccessToken,本地存在则直接取缓存中的数据，本地不存在，则直接通过网络获取
+     * @param appid appid
+     * @param secret secret
+     * @return 返回从微信获取的access_token
+     */
+    public static String getAccessToken(String appid, String secret) throws Exception{
+        String key = WX_BASE.concat(appid).concat(secret);
+        //从缓存获取access_token
+        String access_token = redisUtil.get(key);
+        //缓存中没有，则从网络直接获取后放入缓存7200s
+        if(StringUtils.isEmpty(access_token)){
+            log.debug("通过网络获取access_token");
+            WxAccessToken wxAccessToken = getWxAccessToken(appid, secret);
+            if(wxAccessToken == null){
+                return "";
+            }
+            redisUtil.setEx(key,wxAccessToken.getAccess_token(), wxAccessToken.getExpires_in(), TimeUnit.SECONDS);
+            access_token = wxAccessToken.getAccess_token();
+        }
+        return access_token;
+    }
+
+    /**
+     * 直接通过网络获取access_token
+     * @param appid appid
+     * @param secret secret
+     * @return 返回从微信获取的access_token数据封装
+     */
+    private static WxAccessToken getWxAccessToken(String appid, String secret) throws Exception{
+        log.debug("传入的参数: " + appid + " <<=====>> " + secret);
+        String json = AccessTokenProxy.getAccessToken(appid, secret);
+        log.debug("通过网络获取AccessToken的结果为： " + json);
+        if(StringUtils.isEmpty(json) || json.contains(WxConstants.ERRCODE)){
+            json = AccessTokenProxy.getAccessToken(appid, secret);
+        }
+        if(StringUtils.isEmpty(json) || json.contains(WxConstants.ERRCODE)){
+            return null;
+        }
+        WxAccessToken wxAccessToken = JsonUtils.json2Bean(json, WxAccessToken.class);
+        log.debug("wxAccessToken====>>>" + wxAccessToken.toString());
+        return wxAccessToken;
+    }
+
+}
