@@ -20,7 +20,7 @@ spring:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
 #      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
-      url: jdbc:mysql://127.0.0.1:3306/flowable?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true
+      url: jdbc:mysql://127.0.0.1:3306/flowable?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
       username: root
       password: chimanloo1004
 
@@ -128,10 +128,6 @@ minio:
   accesskey: admin
   secretKey: chimanloo1004
 
-# flowable
-flowable:
-  async-executor-activate: false # 关闭异步，不关闭历史数据的插入就是异步的，会在同一个事物里面，无法回滚
-  database-schema-update: false
 
 # mybatis-plus
 mybatis-plus:

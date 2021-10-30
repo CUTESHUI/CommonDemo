@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="">
+    <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/aspect/request/RequestLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/aspect/request/RequestLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/OkHttpTestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/RabbitMQTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/RabbitMQTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/service/listener/DirectRabbitMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/service/listener/DirectRabbitMQListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/utils/OkHttpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/callback/CallExternalSystemDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/callback/SendRejectionMail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/FlowableConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/ProcessEngineConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FLowableImgController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableAuditController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBackController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableProcessInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/dto/TaskRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/dto/TaskResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/enums/ButtonsEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/enums/CommentTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/FlowableTaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/PermissionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/impl/FlowableBaseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/impl/FlowableTaskServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/impl/PermissionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/flowable/utils/FlowableUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/SensitiveWordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/SensitiveWordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/processes/Holiday_Request.bpmn20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/processes/LeaveProcess.bpmn20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CommonDemo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/CommonDemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/CommonDemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/callback/CallExternalSystemDelegate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/callback/SendRejectionMail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/config/FlowableConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/config/ProcessEngineConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FLowableImgController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FlowableAuditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FlowableBackController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FlowableBaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FlowableProcessInstance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/controller/FlowableTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/dto/TaskRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/dto/TaskResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/enums/ButtonsEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/enums/CommentTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/service/FlowableTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/service/PermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/service/impl/FlowableBaseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/service/impl/FlowableTaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/service/impl/PermissionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/flowable/utils/FlowableUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/processes/Holiday_Request.bpmn20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/processes/LeaveProcess.bpmn20.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,15 +69,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/InfluxdbUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-683">
-              <caret line="148" column="58" lean-forward="true" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="488">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -99,18 +132,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/impl/PermissionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/PermissionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/dto/TaskRequestDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/impl/FlowableTaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/service/FlowableTaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableProcessInstance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableAuditController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FLowableImgController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/MongoTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/mongodb/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableTaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/config/TimestampConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/repository/UserMongoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/config/MongoDBConfig.java" />
@@ -140,16 +163,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shui/service/listener/DirectRabbitMQListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/IndexTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/TestInflux.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/GeoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/RedisGeoUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/config/InfluxdbConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/influxdb/Sensor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/InfluxTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/InfluxdbUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/FlowableConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableTaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableProcessInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FLowableImgController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBackController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableAuditController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/ProcessEngineConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -168,20 +201,13 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="commondemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="commondemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="25" />
-    <option name="width" value="1873" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,10 +257,18 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="shui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -251,7 +284,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shui/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -265,9 +298,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="test" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shui.flowable.enums" />
       <recent name="com.shui.flowable.service.impl" />
@@ -275,10 +305,13 @@
       <recent name="com.shui.flowable.dto" />
       <recent name="com.shui.flowable.utils" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/utils" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/flowable/dto" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/flowable/config" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/config/mybatis" />
     </key>
@@ -299,7 +332,7 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.1826923" />
+    <option name="contentProportion" value="0.26206896" />
   </component>
   <component name="RunManager" selected="Spring Boot.CommonDemoApplication">
     <configuration name="MockitoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -636,6 +669,13 @@
       <workItem from="1635404947507" duration="4757000" />
       <workItem from="1635411067421" duration="256000" />
       <workItem from="1635411395262" duration="270000" />
+      <workItem from="1635605177315" duration="4529000" />
+      <workItem from="1635609824553" duration="131000" />
+      <workItem from="1635609964978" duration="233000" />
+      <workItem from="1635610202274" duration="1476000" />
+      <workItem from="1635612293286" duration="923000" />
+      <workItem from="1635613741950" duration="137000" />
+      <workItem from="1635613960877" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1625633216366</created>
@@ -701,7 +741,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261459000" />
+    <option name="totallyTimeSpent" value="268932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,9 +753,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="25" width="1873" height="1055" extended-state="0" />
+    <frame x="47" y="25" width="1393" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4968017" visible="true" weight="0.22679846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4968017" visible="true" weight="0.25354213" />
       <window_info id="Structure" order="1" sideWeight="0.50319827" side_tool="true" weight="0.2578168" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -725,26 +766,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32942432" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52554744" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49962714" weight="0.5240444" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Sequence" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32942432" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5003728" side_tool="true" weight="0.52506596" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32942432" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.65991473" />
       <window_info anchor="bottom" id="Problems" order="10" weight="0.32942432" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32942432" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32849604" />
       <window_info anchor="bottom" id="Docker" order="12" weight="0.5191898" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32942432" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.55936676" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32302773" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32189974" />
       <window_info anchor="bottom" id="Debug" order="16" weight="0.36886993" />
-      <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.5127932" />
+      <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.3812665" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2495886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.27512357" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3385533" />
       <window_info anchor="right" id="Codota" order="4" weight="0.32935917" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -847,277 +888,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/mongoHelper/bean/BaseMongoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/WebUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/SystemUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ClassUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/sensitive/SensitiveTypeEnum.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/sensitive/Sensitive.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="54" selection-start-line="54" selection-end-line="55" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/SpringContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ProtostuffUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1025">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/sensitive/SensitiveSerialize.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.3.6/spring-rabbit-2.3.6-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="1110" column="16" selection-start-line="1110" selection-start-column="16" selection-end-line="1110" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.3.6/spring-amqp-2.3.6.jar!/org/springframework/amqp/core/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.3.6/spring-messaging-5.3.6.jar!/org/springframework/messaging/MessageHeaders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.3.6/spring-amqp-2.3.6.jar!/org/springframework/amqp/support/AmqpHeaders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.3.6/spring-messaging-5.3.6.jar!/org/springframework/messaging/handler/annotation/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.3.6/spring-amqp-2.3.6-sources.jar!/org/springframework/amqp/support/AmqpHeaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1146">
-          <caret line="87" column="49" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RabbitMQTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.3.6/spring-messaging-5.3.6.jar!/org/springframework/messaging/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.3.6/spring-rabbit-2.3.6-sources.jar!/org/springframework/amqp/rabbit/annotation/RabbitListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4764">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/FanoutRabbitMQConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.4.5/spring-boot-autoconfigure-2.4.5.jar!/org/springframework/boot/autoconfigure/amqp/RabbitProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/listener/DirectRabbitMQListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="109" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/DirectRabbitMQConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/RabbitMQConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.4.5/spring-boot-autoconfigure-2.4.5.jar!/org/springframework/boot/autoconfigure/influx/InfluxDbProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/ExcelTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/influxdb/influxdb-java/2.20/influxdb-java-2.20.jar!/org/influxdb/InfluxDBFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/OkHttpUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/OkHttpTestController.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/TestInflux.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="283" selection-start-line="283" selection-end-line="283" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="26" selection-start-line="26" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/RestTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/dto/MailDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.4.8/spring-data-commons-2.4.8-sources.jar!/org/springframework/data/geo/Distance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="e#5264#5265#0" expanded="true" />
-            <element signature="e#5288#5289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.8/spring-data-redis-2.4.8-sources.jar!/org/springframework/data/redis/core/GeoOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="395" column="19" selection-start-line="395" selection-start-column="19" selection-end-line="395" selection-end-column="19" />
-          <folding>
-            <element signature="e#8378#8379#0" expanded="true" />
-            <element signature="e#8410#8411#0" expanded="true" />
-            <element signature="e#9331#9332#0" expanded="true" />
-            <element signature="e#9367#9368#0" expanded="true" />
-            <element signature="e#16254#16255#0" expanded="true" />
-            <element signature="e#16288#16289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.4.8/spring-data-commons-2.4.8-sources.jar!/org/springframework/data/geo/GeoResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.6/spring-web-5.3.6.jar!/org/springframework/web/bind/annotation/RequestBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.8/spring-data-redis-2.4.8-sources.jar!/org/springframework/data/redis/connection/RedisGeoCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="417" column="14" selection-start-line="417" selection-start-column="8" selection-end-line="417" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/GeoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="835">
@@ -1153,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/InfluxdbConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1192,13 +955,260 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/InfluxdbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-683">
-          <caret line="148" column="58" lean-forward="true" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
+        <state relative-caret-position="24">
+          <caret line="148" column="58" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/fastdfs/FastDFSFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/secbr/fastdfs-client-plus/1.1.1-RELEASE/fastdfs-client-plus-1.1.1-RELEASE.jar!/top/folen/fastdfs/ClientGlobal.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="250" column="22" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
+          <folding>
+            <element signature="e#11900#11901#0" expanded="true" />
+            <element signature="e#11942#11943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/fastdfs/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="100" column="107" lean-forward="true" selection-start-line="100" selection-start-column="107" selection-end-line="100" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/fastdfs/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/annotation/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/aspect/DataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="502" column="9" selection-start-line="502" selection-start-column="9" selection-end-line="502" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.3.6/spring-jdbc-5.3.6.jar!/org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DynamicDataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="39" column="75" lean-forward="true" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.2.4/druid-1.2.4.jar!/com/alibaba/druid/pool/DruidDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2323">
+          <caret line="94" column="12" lean-forward="true" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/config/DynamicDataSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stencilset_bpmn.json" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/flowable/flowable-spring-boot-starter-process/6.5.0/flowable-spring-boot-starter-process-6.5.0.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/3.6.3/liquibase-core-3.6.3.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4018" />
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/flowable/flowable-spring-boot-starter/6.5.0/flowable-spring-boot-starter-6.5.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1036" />
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/flowable/flowable-ui-modeler-conf/6.5.0/flowable-ui-modeler-conf-6.5.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableTaskController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableProcessInstance.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FLowableImgController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBaseController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBackController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableAuditController.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/utils/FlowableUtils.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.6/spring-beans-5.3.6.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/flowable/flowable-spring-boot-autoconfigure/6.5.0/flowable-spring-boot-autoconfigure-6.5.0.jar!/org/flowable/spring/boot/FlowableProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="236" column="16" selection-start-line="236" selection-start-column="16" selection-end-line="236" selection-end-column="16" />
+          <folding>
+            <element signature="e#7599#7600#0" expanded="true" />
+            <element signature="e#7649#7650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/config/ProcessEngineConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/flowable/config/FlowableConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/HandleControllerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/ipinterceptor/IpInterceptorAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/request/RequestErrorInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/request/RequestInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/request/RequestLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2009">
+          <folding>
+            <element signature="e#0#4638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6032">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1298,5 +1308,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>

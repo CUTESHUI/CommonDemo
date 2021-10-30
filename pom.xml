@@ -31,7 +31,6 @@
         <easypoi>4.2.0</easypoi>
         <screw>1.0.5</screw>
         <assertj-core>3.17.0</assertj-core>
-        <flowable.version>6.7.0</flowable.version>
     </properties>
 
     <dependencies>
@@ -287,43 +286,6 @@
             <artifactId>hutool-all</artifactId>
             <version>5.7.12</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.flowable</groupId>
-            <artifactId>flowable-spring-boot-starter</artifactId>
-            <version>${flowable.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.mybatis</groupId>
-                    <artifactId>mybatis</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.flowable</groupId>
-            <artifactId>flowable-json-converter</artifactId>
-            <version>${flowable.version}</version>
-        </dependency>
-        <!--        <dependency>-->
-<!--            <groupId>org.flowable</groupId>-->
-<!--            <artifactId>flowable-ui-modeler-logic</artifactId>-->
-<!--            <version>${flowable.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.flowable</groupId>-->
-<!--            <artifactId>flowable-ui-modeler-rest</artifactId>-->
-<!--            <version>${flowable.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.flowable</groupId>-->
-<!--            <artifactId>flowable-ui-modeler-logic</artifactId>-->
-<!--            <version>${flowable.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.flowable</groupId>-->
-<!--            <artifactId>flowable-ui-modeler-conf</artifactId>-->
-<!--            <version>${flowable.version}</version>-->
-<!--        </dependency>-->
 
     </dependencies>
 
