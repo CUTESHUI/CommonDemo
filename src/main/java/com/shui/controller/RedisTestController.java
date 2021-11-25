@@ -7,6 +7,7 @@ import com.shui.domain.entity.User;
 import com.shui.service.redis.BlackUserServiceImpl;
 import com.shui.service.redis.LotteryServiceImpl;
 import com.shui.service.redis.RedBagServiceImpl;
+import com.shui.service.redis.SingnInServiceImpl;
 import com.shui.utils.RedisGeoUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -15,11 +16,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.GeoResults;
 import org.springframework.data.geo.Point;
+import org.springframework.data.redis.connection.BitFieldSubCommands;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+import redis.clients.jedis.Jedis;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -32,7 +36,7 @@ import java.util.stream.Collectors;
 public class RedisTestController {
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
     @Autowired
     private UserDao userDao;
     @Autowired
@@ -43,6 +47,8 @@ public class RedisTestController {
     private BlackUserServiceImpl blackUserService;
     @Autowired
     private RedisGeoUtil redisGeoUtil;
+    @Autowired
+    private SingnInServiceImpl singnInServiceImpl;
 
     @GetMapping("saveAll2Redis")
     @ApiOperation("保存所有user到redis")
@@ -150,6 +156,56 @@ public class RedisTestController {
             distanceUnit = RedisGeoCommands.DistanceUnit.METERS;
         }
         return redisGeoUtil.getRadiusByXY(dto.getGeoKey(), dto.getX(), dto.getY(), dto.getDistance(), distanceUnit, dto.getLimit());
+    }
+
+    @GetMapping("signIn")
+    @ApiOperation("用户签到")
+    public void signIn(@RequestParam("userId") Long userId) {
+        singnInServiceImpl.signIn(userId);
+    }
+
+    @GetMapping("signInRetroactive")
+    @ApiOperation("用户补签到")
+    public void signInRetroactive(@RequestParam("userId") Long userId, @RequestParam("day") Integer day) {
+        singnInServiceImpl.signInRetroactive(userId, day);
+    }
+
+    @GetMapping("signInInfo")
+    @ApiOperation("查询用户总积分")
+    public Map<String, Object> signInInfo(@RequestParam("userId") Long userId, @RequestParam("year") Integer year, @RequestParam("month") Integer month, @RequestParam("day") Integer day) {
+        return singnInServiceImpl.signInInfo(userId, year, month, day);
+    }
+
+    @GetMapping("bitfield1")
+    @ApiOperation("bitfield1")
+    public List testBitfield(@RequestParam("key") String key, @RequestParam("limit") Integer limit, @RequestParam("offset") Integer offset) {
+        Jedis jedis = new Jedis();
+        return jedis.bitfield(key, "GET", "u" + limit, offset + "");
+    }
+
+    @GetMapping("bitfield2")
+    @ApiOperation("bitfield2")
+    public List testBitfield2(@RequestParam("key") String key, @RequestParam("limit") Integer limit, @RequestParam("offset") Integer offset) {
+//        return redisTemplate.execute((RedisCallback<List<Long>>) con ->
+//                con.bitField(
+//                        key.getBytes(),
+//                        BitFieldSubCommands.create()
+//                                .get(BitFieldSubCommands.BitFieldType.unsigned(limit))
+//                                .valueAt(offset)
+//                ));
+        return redisTemplate.opsForValue().bitField(
+                key,
+                BitFieldSubCommands.create()
+                        .get(BitFieldSubCommands.BitFieldType.unsigned(limit))
+                        .valueAt(offset)
+        );
+    }
+
+    @GetMapping("setBit")
+    @ApiOperation("setBit")
+    public void setBit(@RequestParam("key") String key, @RequestParam("limit") Integer limit, @RequestParam("offset") Integer offset) {
+        Jedis jedis = new Jedis();
+        jedis.setbit(key, limit, true);
     }
 
 }

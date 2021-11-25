@@ -21,6 +21,7 @@ import java.util.Date;
 public class User implements Serializable {
 
     @ApiModelProperty("主键")
+    @TableId
     private Long id;
 
     @NotBlank

@@ -1,5 +1,5 @@
 server:
-  port: 18089
+  port: 18088
   servlet:
     context-path: /shui
 
@@ -20,7 +20,7 @@ spring:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
 #      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
-      url: jdbc:mysql://127.0.0.1:3306/flowable?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
+      url: jdbc:mysql://127.0.0.1:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
       username: root
       password: chimanloo1004
 
@@ -83,18 +83,17 @@ spring:
       uris: 127.0.0.1:9200
 
   # redis
-#  redis:
-#    database: 0
-#    host: 127.0.0.1
-#    password:
-#    port: 6379
-#    timeout: 6000ms
-#    jedis:
-#      pool:
-#        max-active: 1000
-#        max-wait: -1ms
-#        max-idle: 10
-#        min-idle: 5
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 6000ms
+    jedis:
+      pool:
+        max-active: 1000
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 5
 
   # rabbitmq
   rabbitmq:

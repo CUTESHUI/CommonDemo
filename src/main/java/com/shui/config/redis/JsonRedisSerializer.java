@@ -1,4 +1,4 @@
-package com.shui.config;
+package com.shui.config.redis;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;

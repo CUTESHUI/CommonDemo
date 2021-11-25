@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 public class BlackUserServiceImpl {
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     private static final String BLACK_USER_KEY = "BlackUser:Set";
 

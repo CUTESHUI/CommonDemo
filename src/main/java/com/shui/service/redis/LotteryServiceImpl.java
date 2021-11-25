@@ -22,7 +22,7 @@ public class LotteryServiceImpl {
     private static final String LOTTERY_KEY = "Lottery:Set";
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     public String lottery() {
         String lotteryValue = redisTemplate.opsForSet().randomMember(LOTTERY_KEY).toString();

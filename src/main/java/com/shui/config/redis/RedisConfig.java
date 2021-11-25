@@ -1,4 +1,4 @@
-package com.shui.config;
+package com.shui.config.redis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

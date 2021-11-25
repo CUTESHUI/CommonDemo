@@ -1,5 +1,6 @@
 package com.shui.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.shui.dao.UserDao;
 import com.shui.domain.entity.User;
@@ -82,6 +83,12 @@ public class MybatisPlusTestController {
     @ApiOperation("删除user")
     public void deleteUser(@PathVariable("id") Integer id) {
         userDao.deleteById(id);
+    }
+
+    @GetMapping("getByName")
+    @ApiOperation("通过name查找user")
+    public User getByName(@RequestParam("name") String name) {
+        return userDao.selectOne(new LambdaQueryWrapper<User>().eq(User::getName, name));
     }
 
 }

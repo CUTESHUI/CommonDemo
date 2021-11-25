@@ -21,7 +21,7 @@ public class RedBagServiceImpl {
     private static final String RED_BAG_KEY = "RedBag:List";
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, Object> redisTemplate;
 
     public String sendRedBag(Integer total, Integer count) {
         // 1、拆分金额
