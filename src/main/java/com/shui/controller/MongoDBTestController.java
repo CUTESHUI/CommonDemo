@@ -1,5 +1,6 @@
 package com.shui.controller;
 
+import com.shui.config.mongo.MongoDataSource;
 import com.shui.domain.mongodb.MongoUser;
 import com.shui.repository.UserMongoRepository;
 import io.swagger.annotations.Api;
@@ -57,9 +58,20 @@ public class MongoDBTestController {
     }
 
 
-    @GetMapping("getUserByName")
-    @ApiOperation("获取User通过名字")
-    public MongoUser getUserByName(@RequestParam("name") String name) {
+    @GetMapping("getUserByNameForDBTest")
+    @ApiOperation("获取User通过名字ForDB-test")
+    @MongoDataSource("test")
+    public MongoUser getUserByNameForDBTest(@RequestParam("name") String name) {
+        Query query = new Query(Criteria
+                .where("name").is(name));
+        MongoUser mongoUser = mongoTemplate.findOne(query, MongoUser.class);
+        return mongoUser;
+    }
+
+    @GetMapping("getUserByNameForDBSpider")
+    @ApiOperation("获取User通过名字ForDB-spider")
+    @MongoDataSource("spider")
+    public MongoUser getUserByNameForDBSpider(@RequestParam("name") String name) {
         Query query = new Query(Criteria
                 .where("name").is(name));
         MongoUser mongoUser = mongoTemplate.findOne(query, MongoUser.class);

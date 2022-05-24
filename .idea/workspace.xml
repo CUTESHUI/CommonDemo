@@ -1,33 +1,609 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="832a5754-f54e-43a1-9746-e8102ee55477" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CommonDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/JsonRedisSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/MybatisPlusTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/MybatisPlusTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/BlackUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/BlackUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/LotteryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/LotteryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/RedBagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/service/redis/RedBagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/ElasticsearchTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/ElasticsearchTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/controller/MongoDBTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/controller/MongoDBTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/domain/UserElastic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/domain/dto/MailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/domain/dto/MailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/domain/mongodb/MongoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/domain/mongodb/MongoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/search/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/utils/ElasticSearchUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shui/utils/ElasticSearchUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/base/BaseBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/req/WxAnalysisDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryHourAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryHourItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/WxNewsBaseAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/WxNewsMsgIdAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/summary/WxArticleSummaryAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/summary/WxArticleSummaryItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalDetailAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalDetailsAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/read/WxNewsUserReadAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/read/WxNewsUserReadItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/read/hour/WxNewsUserReadHourAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/read/hour/WxNewsUserReadHourItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/share/WxNewsUserShareAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/share/WxNewsUserShareItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/share/hour/WxNewsUserShareHourAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/article/user/share/hour/WxNewsUserShareHourItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/WxMsgUpstreamAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/WxMsgUpstreamItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/dist/WxMsgUpstreamDistAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/dist/WxMsgUpstreamDistItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/hour/WxMsgUpstreamHourAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/hour/WxMsgUpstreamHourItemAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/month/WxMsgUpstreamMonthAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/week/WxMsgUpstreamWeekAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/user/WxUserBaseAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/user/WxUserCumulateAnalysisItemResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/user/WxUserCumulateAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/user/WxUserSummaryAnalysisItemResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/analysis/resp/user/WxUserSummaryAnalysisResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/base/BaseJsonBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/code/WxCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/comment/WxCommentContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/comment/WxCommentData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/comment/WxCommentDataGetList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/comment/WxCommentId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/factory/json/QrcodeParamsFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/WxKfaccountBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/WxKfaccountInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/WxKfaccountInfoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/WxKfaccountBaseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/WxKfaccountTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/WxKfaccountTextMessageItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsArticlesItemsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsArticlesMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/delete/WxMassDeleteMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/get/WxMassGetMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/WxMassOpenIdMediaId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/WxMassOpenIdToUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/image/WxMassOpenIdImageMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/news/WxMassOpenIdNewsMassage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/text/WxMassOpenIdContentMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/text/WxMassOpenIdTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/video/WxMassOpenIdMedia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/video/WxMassOpenIdVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/voice/WxMassOpenIdVoiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/wxcard/WxMassOpenIdCardId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/openid/wxcard/WxMassOpenIdCardMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/WxMassPreviewMediaId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/WxMassPreviewToUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/image/WxMassPreviewImageMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/news/WxMassPreviewNewsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/text/WxMassPreviewContentMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/text/WxMassPreviewTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/video/WxMassPreviewVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/voice/WxMassPreviewVoiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardInfoExt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/speed/WxMassSpeed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/WxMassTagFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/WxMassTagMediaId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/image/WxMassTagImageMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/news/WxMassTagNewsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/text/WxMassTagTextContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/text/WxMassTagTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoUploadMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoUploadResponseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/voice/WxMassTagVoiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/wxcard/WxMassTagCardId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/mass/tag/wxcard/WxMassTagCardMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/news/WxMediaNewsAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/news/WxMediaNewsAddItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/news/WxNewsBatchGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/upload/WxMediaUpdateNews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/upload/WxMediaUploadNews.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/upload/WxMediaUploadNewsItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/media/upload/WxMediaUploadResponseBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/menu/WxMenuBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2AccessToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2Auth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2Code.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2GetUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2Refresh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/oauth/WxOAuth2UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/qrcode/WxQrcodeForever.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/qrcode/WxQrcodeResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/qrcode/WxQrcodeSence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/qrcode/WxQrcodeSenceId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/qrcode/WxQrcodeTemporary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/quota/WxQuota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/shorturl/WxShortUrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/shorturl/WxShortUrlResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/WxTemplateDataItemSend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/WxTemplateId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/WxTemplateMiniprogramSend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/WxTemplateShortId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/industry/WxTemplateIndustry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/industry/WxTemplateIndustryItemResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/industry/WxTemplateIndustryResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/send/WxTemplateDataSend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/send/WxTemplateSend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/subscribe/WxTemplateContentSubscribe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/template/subscribe/WxTemplateSubscribe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/token/WxAccessToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/info/WxUseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/info/WxUseInfoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/info/WxUserGetList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/info/WxUserOpenIds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagCreateResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagGetList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagGetListItemResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagGetListResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagGetResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagLang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagOpenId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagRemark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/json/user/tag/WxUserTagUserList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/map/WxMediaId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/router/receive/WxReceiveRouterMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/router/receive/WxReceiveRouterResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/base/WxBaseMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/base/WxBaseReceiveMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxLocationEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxMenuLinkEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxQrcodeScanEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxQrcodeSubscribeEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxSubscribeEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/WxUnSubscribeEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/auth/WxAuthFailEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/auth/WxAuthSuccessEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/base/WxBaseReceiveEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/mass/WxMassCopyrightCheckResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/mass/WxMassEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/mass/WxMassResultListItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuClientEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuLocationSelectItemMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuLocationSelectMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicPhotoOrAlbumMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoInfoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoItemMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicWeixinMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPushEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodeItemEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodePushEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodeWaitMsgEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuViewEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/event/template/WxTemplateEventMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/image/WxReceiveImageMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/link/WxReceiveLinkMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/location/WxReceiveLocationMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/text/WxReceiveTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/video/WxReceiveShortVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/video/WxReceiveVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/receive/voice/WxReceiveVoiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/base/WxBaseSendMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/image/WxSendImageMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/music/WxSendMusicMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/news/WxSendNewsItemMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/news/WxSendNewsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/text/WxSendTextMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/video/WxSendVideoMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/beans/xml/message/send/voice/WxSendVoiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/config/BaseProp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/config/LoadProp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/constants/WxConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/core/router/WxReceiveMessageRouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/base/BaseConnectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/base/HttpConnectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/analysis/WxAnalysisHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/autoreply/WxAutoReplyHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/base/BaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/comment/WxCommentHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/group/WxGroupHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/host/WxHostHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/kfaccount/WxKfaccountHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/mass/WxMassHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/media/WxMediaHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/menu/WxMenuHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/oauth/WxOAuth2Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/oauth/WxOAuth2WithCacheHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/qrcode/WxQrcodeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/quota/WxQuotaHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/shorturl/WxWxShortUrlHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/template/send/WxTemplateSendHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/template/subscribe/WxTemplateSubscribeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/token/AccessTokenHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/handler/user/WxUserHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/proxy/token/AccessTokenProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/http/wx/WxHttpConnectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/WxType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/Assert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/CharsetCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/ChineseCharToEn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/CollectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/Compress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/CryptUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/Des.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/DesUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/DigestUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/DistanceUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/DistanceUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/FileCopyUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/FirstLetterUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/ImageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/JsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/MultiValueMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/ObjectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/RandomUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/RarToFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/ReflectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/SHA1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/StreamUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/common/UUIDUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/AesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/ByteGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/PKCS7Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/SHA1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/WXBizMsgCrypt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/XMLParse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/bean/WxCryptXml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/crypt/wrapper/WxBizMsgCryptWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/json/JsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/map/ReflectMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/sign/DigestUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/sign/MessageDigestAlgorithms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/sign/WechatSignUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/xml/XStreamCDataConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/xml/XStreamInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/xml/XStreamMediaIdConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shui/wx/utils/xml/handler/XStreamHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/bean/json/test/WxBeanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/bean/json/test/WxKfaccountTextMessageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/bean/json/test/WxTemplateSendTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/bean/xml/test/BeansParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/analysis/WxAnalysisHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/autoreply/WxAutoReplyHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/base/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/core/token/AccessTokenWrapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/group/WxGroupHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/http/proxy/host/WxHostWrapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/http/proxy/token/AccessTokenProxyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/kfaccount/WxKfAccountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/mass/MassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/media/WxMediaHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/menu/WechatMenuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/oauth/WxOAuth2HandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/qrcode/WxQrcodeHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/shorturl/WxWxShortUrlHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/template/WxTemplateHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/mp/user/WxUserHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/router/WxReceiveMessageRouterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/utils/ReflectMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wx/utils/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/JsonRedisSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MybatisPlusTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/controller/MybatisPlusTestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/RedisTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/controller/RedisTestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/domain/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/BlackUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/service/redis/BlackUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/LotteryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/service/redis/LotteryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/service/redis/RedBagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/service/redis/RedBagServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/component/GlobalResponseBodyAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/component/GlobalResponseBodyAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/ElasticsearchTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/controller/ElasticsearchTestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/controller/MongoDBTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/controller/MongoDBTestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/UserElastic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/domain/mongodb/MongoUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shui/domain/mongodb/MongoUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/search/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/utils/ElasticSearchUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/base/BaseBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/req/WxAnalysisDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryHourAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryHourItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/api/WxAPISummaryItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/WxNewsBaseAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/WxNewsMsgIdAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/summary/WxArticleSummaryAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/summary/WxArticleSummaryItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalDetailAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/total/WxNewsArticleTotalDetailsAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/read/WxNewsUserReadAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/read/WxNewsUserReadItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/read/hour/WxNewsUserReadHourAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/read/hour/WxNewsUserReadHourItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/share/WxNewsUserShareAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/share/WxNewsUserShareItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/share/hour/WxNewsUserShareHourAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/article/user/share/hour/WxNewsUserShareHourItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/WxMsgUpstreamAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/WxMsgUpstreamItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/dist/WxMsgUpstreamDistAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/dist/WxMsgUpstreamDistItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/hour/WxMsgUpstreamHourAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/hour/WxMsgUpstreamHourItemAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/month/WxMsgUpstreamMonthAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/news/msg/upstream/week/WxMsgUpstreamWeekAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/user/WxUserBaseAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/user/WxUserCumulateAnalysisItemResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/user/WxUserCumulateAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/user/WxUserSummaryAnalysisItemResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/analysis/resp/user/WxUserSummaryAnalysisResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/base/BaseJsonBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/code/WxCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/comment/WxCommentContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/comment/WxCommentData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/comment/WxCommentDataGetList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/comment/WxCommentId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/factory/json/QrcodeParamsFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/WxKfaccountBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/WxKfaccountInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/WxKfaccountInfoList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/WxKfaccountBaseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/WxKfaccountTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/WxKfaccountTextMessageItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsArticlesItemsMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsArticlesMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/kfaccount/message/news/WxKfaccountNewsMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/delete/WxMassDeleteMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/get/WxMassGetMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/WxMassOpenIdMediaId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/WxMassOpenIdToUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/image/WxMassOpenIdImageMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/news/WxMassOpenIdNewsMassage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/text/WxMassOpenIdContentMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/text/WxMassOpenIdTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/video/WxMassOpenIdMedia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/video/WxMassOpenIdVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/voice/WxMassOpenIdVoiceMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/wxcard/WxMassOpenIdCardId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/openid/wxcard/WxMassOpenIdCardMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/WxMassPreviewMediaId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/WxMassPreviewToUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/image/WxMassPreviewImageMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/news/WxMassPreviewNewsMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/text/WxMassPreviewContentMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/text/WxMassPreviewTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/video/WxMassPreviewVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/voice/WxMassPreviewVoiceMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardInfoExt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/preview/wxcard/WxMassPreviewCardMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/speed/WxMassSpeed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/WxMassTagFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/WxMassTagMediaId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/image/WxMassTagImageMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/news/WxMassTagNewsMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/text/WxMassTagTextContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/text/WxMassTagTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoUploadMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/video/WxMassTagVideoUploadResponseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/voice/WxMassTagVoiceMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/wxcard/WxMassTagCardId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/mass/tag/wxcard/WxMassTagCardMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/news/WxMediaNewsAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/news/WxMediaNewsAddItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/news/WxNewsBatchGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/upload/WxMediaUpdateNews.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/upload/WxMediaUploadNews.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/upload/WxMediaUploadNewsItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/media/upload/WxMediaUploadResponseBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/menu/WxMenuBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2AccessToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2Auth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2GetUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2Refresh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/oauth/WxOAuth2UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/qrcode/WxQrcodeForever.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/qrcode/WxQrcodeResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/qrcode/WxQrcodeSence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/qrcode/WxQrcodeSenceId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/qrcode/WxQrcodeTemporary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/quota/WxQuota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/shorturl/WxShortUrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/shorturl/WxShortUrlResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/WxTemplateDataItemSend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/WxTemplateId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/WxTemplateMiniprogramSend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/WxTemplateShortId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/industry/WxTemplateIndustry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/industry/WxTemplateIndustryItemResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/industry/WxTemplateIndustryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/send/WxTemplateDataSend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/send/WxTemplateSend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/subscribe/WxTemplateContentSubscribe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/template/subscribe/WxTemplateSubscribe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/token/WxAccessToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/info/WxUseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/info/WxUseInfoList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/info/WxUserGetList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/info/WxUserOpenIds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagCreateResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagGetList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagGetListItemResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagGetListResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagGetResp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagLang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagOpenId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagRemark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/json/user/tag/WxUserTagUserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/map/WxMediaId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/router/receive/WxReceiveRouterMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/router/receive/WxReceiveRouterResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/base/WxBaseMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/base/WxBaseReceiveMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxLocationEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxMenuLinkEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxQrcodeScanEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxQrcodeSubscribeEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxSubscribeEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/WxUnSubscribeEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/auth/WxAuthFailEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/auth/WxAuthSuccessEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/base/WxBaseReceiveEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/mass/WxMassCopyrightCheckResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/mass/WxMassEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/mass/WxMassResultListItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuClientEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuLocationSelectItemMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuLocationSelectMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicPhotoOrAlbumMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoInfoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoItemMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicSysPhotoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPicWeixinMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuPushEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodeItemEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodePushEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuScanCodeWaitMsgEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/menu/WxMenuViewEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/event/template/WxTemplateEventMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/image/WxReceiveImageMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/link/WxReceiveLinkMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/location/WxReceiveLocationMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/text/WxReceiveTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/video/WxReceiveShortVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/video/WxReceiveVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/receive/voice/WxReceiveVoiceMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/base/WxBaseSendMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/image/WxSendImageMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/music/WxSendMusicMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/news/WxSendNewsItemMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/news/WxSendNewsMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/text/WxSendTextMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/video/WxSendVideoMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/beans/xml/message/send/voice/WxSendVoiceMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/config/BaseProp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/config/LoadProp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/constants/WxConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/core/router/WxReceiveMessageRouter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/base/BaseConnectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/base/HttpConnectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/analysis/WxAnalysisHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/autoreply/WxAutoReplyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/base/BaseHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/comment/WxCommentHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/group/WxGroupHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/host/WxHostHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/kfaccount/WxKfaccountHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/mass/WxMassHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/media/WxMediaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/menu/WxMenuHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/oauth/WxOAuth2Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/qrcode/WxQrcodeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/quota/WxQuotaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/shorturl/WxWxShortUrlHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/template/send/WxTemplateSendHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/template/subscribe/WxTemplateSubscribeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/token/AccessTokenHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/handler/user/WxUserHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/proxy/token/AccessTokenProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/http/wx/WxHttpConnectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/WxType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/Assert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/CharsetCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/ChineseCharToEn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/CollectionUtils$EnumerationIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/CollectionUtils$MultiValueMapAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/CollectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/Compress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/CryptUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$CouponUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$CurrentDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$FormatType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils$TimeUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/Des.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DesUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DigestUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DistanceUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/DistanceUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/FileCopyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/FirstLetterUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/ImageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/MultiValueMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/ObjectUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/RandomUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/RarToFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/ReflectUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/SHA1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/StreamUtils$NonClosingInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/StreamUtils$NonClosingOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/StreamUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/StringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/common/UUIDUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/AesException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/ByteGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/PKCS7Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/SHA1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/WXBizMsgCrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/XMLParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/bean/WxCryptXml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/crypt/wrapper/WxBizMsgCryptWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/json/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/map/ReflectMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/sign/DigestUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/sign/MessageDigestAlgorithms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/sign/WechatSignUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/XStreamCDataConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/XStreamInitializer$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/XStreamInitializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/XStreamInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/XStreamMediaIdConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shui/wx/utils/xml/handler/XStreamHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/MockitoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/ScrewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/SensitiveWordTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/bean/json/test/WxBeanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/bean/json/test/WxKfaccountTextMessageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/bean/json/test/WxTemplateSendTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/bean/xml/test/BeansParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/analysis/WxAnalysisHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/autoreply/WxAutoReplyHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/base/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/core/token/AccessTokenWrapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/group/WxGroupHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/http/proxy/host/WxHostWrapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/http/proxy/token/AccessTokenProxyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/kfaccount/WxKfAccountTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/mass/MassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/media/WxMediaHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/menu/WechatMenuTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/oauth/WxOAuth2HandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/qrcode/WxQrcodeHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/shorturl/WxWxShortUrlHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/template/WxTemplateHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/mp/user/WxUserHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/router/WxReceiveMessageRouterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/utils/ReflectMapTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wx/utils/Test.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,82 +612,30 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/ipinterceptor/IpInterceptorAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/redisson/RedissonLockAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/RedissonTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/HandleControllerException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-749">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="XML File" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -142,6 +666,10 @@
       <find>uid</find>
       <find>1000</find>
       <find>type</find>
+      <find>feild</find>
+      <find>attrValueList</find>
+      <find>Long id</find>
+      <find>IOException</find>
     </findStrings>
     <replaceStrings>
       <replace>BaseException</replace>
@@ -150,6 +678,9 @@
       <replace>Point</replace>
       <replace>userId</replace>
       <replace>1000L</replace>
+      <replace>field</replace>
+      <replace>String id</replace>
+      <replace>Exception</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/resources</dir>
@@ -161,64 +692,66 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/rabbitmq/DirectRabbitMQConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/listener/DirectRabbitMQListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/IndexTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/TestInflux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/GeoDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/RedisGeoUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/InfluxdbConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/influxdb/Sensor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/InfluxdbUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/dynamic/datasource/properties/DataSourceProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/FlowableConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableTaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableProcessInstance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FLowableImgController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableBackController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/controller/FlowableAuditController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flowable/config/ProcessEngineConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/aspect/idempotent/IdempotentAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/annotation/Idempotent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/BusinessProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/ProcessContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/ProcessTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pending/PendingParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pending/AbstractLazyPending.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/enums/RespStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/ProcessController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/action/PreParamCheckAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/action/AssembleAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/enums/PipelineStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/pipeline/config/PipelineConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/flink/FlinkTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/SecurityTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/InfluxTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/MybatisPlusTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/BitMapUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/BusinessConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserIntegralLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegralEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegralLogEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegral.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegralLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/dao/UserSignIntegral.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/dao/UserSignIntegralDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/BlackUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/LotteryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/RedBagServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/dao/UserSignIntegralLogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/redis/JsonRedisSerializer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/SensitiveWordTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/PipelineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/common/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/mongoHelper/reflection/ReflectionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/SingletonFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/elasticsearch/ObjElastic.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/DynamicMongoTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/DynamicMongoTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/MongoAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/MongoSwitch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/DynamicMongoAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/MongoList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/MongoListProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/mongo/MongoContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/mongodb/MongoUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/MongoDBTestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchRestHighLevelClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/elasticsearch/UserElastic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/domain/elasticsearch/BankElastic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/repository/BankEsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/repository/UserEsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/ElasticSearchUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/ElasticsearchTestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/config/ElasticSearchConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticSearchBaseDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/LowCodeBaseDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchRestHighLevelClientUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/ZkConnectCuratorUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/UserSignDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/UserSignUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/redis/SingnInServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shui/aspect/redisson/RedissonLockAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchRestHighLevelClientService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/CountLatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shui/component/RedissonTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/ServletUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shui/utils/NanoIdUtils.java" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -239,12 +772,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="43" />
     <option name="y" value="25" />
-    <option name="width" value="1873" />
+    <option name="width" value="1877" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectId" id="2942lSv9KRuGB7SbsncgSV2jghS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -303,39 +837,58 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-              <item name="ipinterceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-              <item name="redisson" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="shui" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommonDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="shui" type="462c0819:PsiDirectoryNode" />
+              <item name="vertx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CommonDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -350,27 +903,35 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shui/config/redis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shui/pipeline" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -380,18 +941,18 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.shui.aspect.idempotent" />
-      <recent name="com.shui.annotation" />
-      <recent name="com.shui.flowable.enums" />
-      <recent name="com.shui.flowable.service.impl" />
-      <recent name="com.shui.flowable.service" />
+      <recent name="com.shui.utils" />
+      <recent name="com.shui.config" />
+      <recent name="com.shui.pipeline.config" />
+      <recent name="com.shui.pipeline.enums" />
+      <recent name="com.shui.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/shui/pipeline" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/shui" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/config/redis" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shui/domain/entity" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/shui/utils" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/shui/flowable/dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,25 +961,14 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-    <option name="contentProportion" value="0.20112045" />
   </component>
   <component name="RunManager" selected="Spring Boot.CommonDemoApplication">
-    <configuration name="UserSignDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shui.service.redis.UserSignDemo" />
+    <configuration name="ElasticsearchRestHighLevelClientService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shui.service.elasticsearch.ElasticsearchRestHighLevelClientService" />
       <module name="CommonDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shui.service.redis.*" />
+          <option name="PATTERN" value="com.shui.service.elasticsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,12 +976,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserSignUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shui.service.redis.UserSignUtils" />
+    <configuration name="NanoIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shui.utils.NanoIdUtils" />
       <module name="CommonDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shui.service.redis.*" />
+          <option name="PATTERN" value="com.shui.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shui.vertx.WebClientTest" />
+      <module name="CommonDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shui.vertx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZkConnectCuratorUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shui.utils.ZkConnectCuratorUtil" />
+      <module name="CommonDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shui.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,18 +1029,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UserSignDemo" />
-      <item itemvalue="Application.UserSignUtils" />
+      <item itemvalue="Application.WebClientTest" />
+      <item itemvalue="Application.ElasticsearchRestHighLevelClientService" />
+      <item itemvalue="Application.ZkConnectCuratorUtil" />
+      <item itemvalue="Application.NanoIdUtils" />
       <item itemvalue="Spring Boot.CommonDemoApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CommonDemoApplication" />
-        <item itemvalue="Application.UserSignUtils" />
-        <item itemvalue="Application.UserSignDemo" />
+        <item itemvalue="Application.NanoIdUtils" />
+        <item itemvalue="Application.ZkConnectCuratorUtil" />
+        <item itemvalue="Application.ElasticsearchRestHighLevelClientService" />
+        <item itemvalue="Application.WebClientTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -744,6 +1325,86 @@
       <workItem from="1637755328036" duration="10928000" />
       <workItem from="1637805738152" duration="5000" />
       <workItem from="1637807641136" duration="573000" />
+      <workItem from="1638077020416" duration="807000" />
+      <workItem from="1638162238378" duration="541000" />
+      <workItem from="1638864222099" duration="163000" />
+      <workItem from="1638933989086" duration="1345000" />
+      <workItem from="1638944645740" duration="2400000" />
+      <workItem from="1638947546393" duration="580000" />
+      <workItem from="1638951181891" duration="73000" />
+      <workItem from="1638955821242" duration="480000" />
+      <workItem from="1639016894273" duration="3000" />
+      <workItem from="1639386999842" duration="242000" />
+      <workItem from="1639389334384" duration="630000" />
+      <workItem from="1640051307210" duration="176000" />
+      <workItem from="1640051489621" duration="30000" />
+      <workItem from="1640140923064" duration="75000" />
+      <workItem from="1640141026999" duration="7000" />
+      <workItem from="1640421740478" duration="12000" />
+      <workItem from="1640421853416" duration="32000" />
+      <workItem from="1641790026907" duration="1078000" />
+      <workItem from="1641791220584" duration="37000" />
+      <workItem from="1641799007641" duration="5000" />
+      <workItem from="1641967345698" duration="423000" />
+      <workItem from="1642041699177" duration="10000" />
+      <workItem from="1642395870763" duration="109000" />
+      <workItem from="1644571225313" duration="153000" />
+      <workItem from="1644656428622" duration="23000" />
+      <workItem from="1646101578187" duration="1074000" />
+      <workItem from="1646204052491" duration="2557000" />
+      <workItem from="1646895672333" duration="506000" />
+      <workItem from="1646897223180" duration="1823000" />
+      <workItem from="1647235310963" duration="4473000" />
+      <workItem from="1647241846506" duration="3355000" />
+      <workItem from="1647338695746" duration="603000" />
+      <workItem from="1647421065517" duration="65000" />
+      <workItem from="1647424059815" duration="130000" />
+      <workItem from="1647496850780" duration="1348000" />
+      <workItem from="1647498286694" duration="4949000" />
+      <workItem from="1647506004956" duration="549000" />
+      <workItem from="1647586733578" duration="8359000" />
+      <workItem from="1647652628964" duration="14678000" />
+      <workItem from="1647741441931" duration="11080000" />
+      <workItem from="1647770535350" duration="318000" />
+      <workItem from="1647828240580" duration="203000" />
+      <workItem from="1647832026698" duration="1666000" />
+      <workItem from="1647850661284" duration="365000" />
+      <workItem from="1647852706579" duration="682000" />
+      <workItem from="1647865099994" duration="986000" />
+      <workItem from="1647871868552" duration="685000" />
+      <workItem from="1647929840280" duration="39000" />
+      <workItem from="1648019574440" duration="426000" />
+      <workItem from="1648020223625" duration="697000" />
+      <workItem from="1648179511053" duration="745000" />
+      <workItem from="1648884469939" duration="1000" />
+      <workItem from="1649215070531" duration="91000" />
+      <workItem from="1649238838596" duration="654000" />
+      <workItem from="1649301194513" duration="6000" />
+      <workItem from="1649302762927" duration="907000" />
+      <workItem from="1649406363764" duration="116000" />
+      <workItem from="1649409870711" duration="1803000" />
+      <workItem from="1649481103613" duration="17000" />
+      <workItem from="1649481275528" duration="333000" />
+      <workItem from="1649751789447" duration="52000" />
+      <workItem from="1650016544909" duration="281000" />
+      <workItem from="1650016832758" duration="53000" />
+      <workItem from="1650261759992" duration="140000" />
+      <workItem from="1650261922659" duration="873000" />
+      <workItem from="1650262905236" duration="33000" />
+      <workItem from="1650532263236" duration="1377000" />
+      <workItem from="1650594274997" duration="36000" />
+      <workItem from="1651043577663" duration="451000" />
+      <workItem from="1652082521106" duration="545000" />
+      <workItem from="1652151776929" duration="60000" />
+      <workItem from="1652334768966" duration="38000" />
+      <workItem from="1652358189236" duration="662000" />
+      <workItem from="1652418552840" duration="72000" />
+      <workItem from="1652419122887" duration="17000" />
+      <workItem from="1652682629442" duration="16000" />
+      <workItem from="1652683216383" duration="177000" />
+      <workItem from="1652683417356" duration="812000" />
+      <workItem from="1652693829749" duration="798000" />
+      <workItem from="1653361039096" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1625633216366</created>
@@ -809,7 +1470,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305536000" />
+    <option name="totallyTimeSpent" value="385198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -821,11 +1482,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="25" width="1873" height="1055" extended-state="6" />
+    <frame x="43" y="25" width="1877" height="1055" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49573562" visible="true" weight="0.23009336" />
-      <window_info id="Structure" order="1" sideWeight="0.5042644" side_tool="true" weight="0.24766612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49208444" visible="true" weight="0.32109588" />
+      <window_info id="Structure" order="1" sideWeight="0.50791556" side_tool="true" weight="0.26025355" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -834,7 +1495,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32942432" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49962714" weight="0.5234541" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49962714" weight="0.52132195" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Sequence" order="5" />
@@ -847,21 +1508,22 @@
       <window_info anchor="bottom" id="Docker" order="12" weight="0.5191898" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32942432" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.55936676" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.31982943" />
-      <window_info anchor="bottom" id="Debug" order="16" weight="0.6398417" />
-      <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.4968017" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.31926122" />
+      <window_info anchor="bottom" id="Debug" order="16" weight="0.63752663" />
+      <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.6266491" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.2495886" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24906786" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.33827567" />
       <window_info anchor="right" id="Codota" order="4" weight="0.32935917" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Word Book" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32960477" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.3294893" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.32885906" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49573562" visible="true" weight="0.19463088" />
@@ -905,7 +1567,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -922,22 +1584,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -967,7 +1614,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/shui/flink/FlinkTest.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -977,366 +1623,402 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CommonDemo$CommonDemoApplication.ic" NAME="CommonDemoApplication Coverage Results" MODIFIED="1647238975984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.shui.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisGeoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ExcelUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ElasticSearchUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/MongoDBTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ProtostuffUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="e#799#829#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28373">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.8/spring-data-redis-2.4.8-sources.jar!/org/springframework/data/redis/core/DefaultValueOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="373" column="57" lean-forward="true" selection-start-line="373" selection-start-column="57" selection-end-line="373" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/BitMapUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/BusinessConstant.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserIntegralLog.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
-          <folding>
-            <element signature="e#6863#6864#0" expanded="true" />
-            <element signature="e#6916#6917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="40" selection-start-line="40" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.4.2/mybatis-plus-core-3.4.2.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.6/mybatis-3.5.6.jar!/org/apache/ibatis/annotations/Mapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dao/UserSignIntegralDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.8/spring-data-redis-2.4.8-sources.jar!/org/springframework/data/redis/core/HashOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/RemoveDruidAdConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/BlackUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/LotteryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/RedBagServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="1864" column="15" selection-start-line="1864" selection-start-column="15" selection-end-line="1864" selection-end-column="15" />
-          <folding>
-            <element signature="e#31780#31781#0" expanded="true" />
-            <element signature="e#31808#31809#0" expanded="true" />
-            <element signature="e#32541#32542#0" expanded="true" />
-            <element signature="e#32567#32568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/domain/entity/UserSignIntegralLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/dao/UserSignIntegralLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/RedisConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/redis/JsonRedisSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/MybatisPlusTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommonDemo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/SensitiveWordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/redis/RedisConfig.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/index/reindex/AbstractBulkIndexByScrollRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.4.8/spring-data-redis-2.4.8-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/index/reindex/UpdateByQueryRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="358" column="42" lean-forward="true" selection-start-line="358" selection-start-column="42" selection-end-line="358" selection-end-column="42" />
+        <state relative-caret-position="144">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0.jar!/redis/clients/jedis/commands/JedisCommands.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/action/search/SearchRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="330" column="15" selection-start-line="330" selection-start-column="15" selection-end-line="330" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0.jar!/redis/clients/jedis/commands/BinaryJedisCommands.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="318" column="15" selection-start-line="318" selection-start-column="15" selection-end-line="318" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="1844" column="23" selection-start-line="1844" selection-start-column="23" selection-end-line="1844" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0.jar!/redis/clients/jedis/Client.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="1047" column="16" selection-start-line="1047" selection-start-column="16" selection-end-line="1047" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0-sources.jar!/redis/clients/jedis/BinaryClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="1332" column="14" selection-start-line="1332" selection-start-column="14" selection-end-line="1332" selection-end-column="14" />
+        <state relative-caret-position="224">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="28" />
           <folding>
-            <element signature="e#39785#39786#0" expanded="true" />
-            <element signature="e#39844#39845#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
+            <element signature="e#2814#2815#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0-sources.jar!/redis/clients/jedis/Jedis.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/8.8.0/lucene-core-8.8.0.jar!/org/apache/lucene/search/TotalHits.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="3758" column="20" selection-start-line="3758" selection-start-column="20" selection-end-line="3758" selection-end-column="20" />
+        <state relative-caret-position="144">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.3.0/jedis-3.3.0-sources.jar!/redis/clients/jedis/Client.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/SearchHits.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="1190" column="46" selection-start-line="1190" selection-start-column="46" selection-end-line="1190" selection-end-column="46" />
+        <state relative-caret-position="365">
+          <caret line="125" column="15" lean-forward="true" selection-start-line="125" selection-start-column="15" selection-end-line="125" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticSearchBaseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="291" column="29" selection-start-line="291" selection-start-column="29" selection-end-line="291" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/UserSignUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/redis/SingnInServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar!/org/springframework/cglib/core/ClassInfo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        <state relative-caret-position="-78">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/RedisTestController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar!/org/springframework/cglib/core/ReflectUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="163" column="30" selection-start-line="163" selection-start-column="30" selection-end-line="163" selection-end-column="30" />
+        <state relative-caret-position="231">
+          <caret line="506" column="22" lean-forward="true" selection-start-line="506" selection-start-column="22" selection-end-line="506" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.7.12/hutool-all-5.7.12.jar!/cn/hutool/core/lang/SimpleCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.7.12/hutool-all-5.7.12.jar!/cn/hutool/core/util/ReflectUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="123" column="55" selection-start-line="123" selection-start-column="55" selection-end-line="123" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="2064" column="17" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar!/org/springframework/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="359" column="44" selection-start-line="359" selection-start-column="44" selection-end-line="359" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#13817#13818#0" expanded="true" />
+            <element signature="e#13875#13876#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fdfs_client.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/reflect/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="231">
+          <caret line="383" column="18" selection-start-line="383" selection-start-column="18" selection-end-line="383" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/ipinterceptor/IpInterceptorAspect.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/SearchHit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <caret line="353" selection-start-line="353" selection-end-line="353" />
+          <folding>
+            <element signature="e#12662#12663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/aspect/redisson/RedissonLockAspect.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="231">
+          <caret line="265" column="48" selection-start-line="265" selection-start-column="48" selection-end-line="265" selection-end-column="48" />
+          <folding>
+            <element signature="e#3486#3487#0" expanded="true" />
+            <element signature="e#3544#3545#0" expanded="true" />
+            <element signature="e#9141#9142#0" expanded="true" />
+            <element signature="e#9199#9200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.12.1/elasticsearch-rest-high-level-client-7.12.1-sources.jar!/org/elasticsearch/client/RestHighLevelClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="581" column="38" selection-start-line="581" selection-start-column="38" selection-end-line="581" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/action/admin/indices/alias/IndicesAliasesRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="209" column="15" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.12.1/elasticsearch-rest-high-level-client-7.12.1-sources.jar!/org/elasticsearch/client/IndicesClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="571" column="32" selection-start-line="571" selection-start-column="32" selection-end-line="571" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/cluster/metadata/AliasMetadata.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.12.1/elasticsearch-rest-high-level-client-7.12.1-sources.jar!/org/elasticsearch/client/GetAliasesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+          <folding>
+            <element signature="e#3071#3072#0" expanded="true" />
+            <element signature="e#3101#3102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/index/reindex/ReindexRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="155" column="42" lean-forward="true" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/pending/AbstractLazyPending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-581">
+          <caret line="56" column="77" selection-start-line="56" selection-start-column="77" selection-end-line="56" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/controller/ElasticsearchTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/HandleControllerException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/pending/PendingParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-749">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/aggregations/Aggregations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/StringCompressUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/GlobalResponseBodyAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="426">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.2.0/curator-framework-5.2.0.jar!/org/apache/curator/framework/CuratorFramework.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.2.0/curator-framework-5.2.0-sources.jar!/org/apache/curator/framework/CuratorFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/ElasticSearchConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ZkConnectCuratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-framework/5.2.0/curator-framework-5.2.0-sources.jar!/org/apache/curator/framework/imps/CuratorFrameworkState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/suggest/completion/CompletionSuggestionBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1645">
+          <caret line="152" column="39" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/builder/SearchSourceBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="543" column="26" selection-start-line="543" selection-start-column="26" selection-end-line="543" selection-end-column="26" />
+          <folding>
+            <element signature="e#21521#21522#0" expanded="true" />
+            <element signature="e#21563#21564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.12.1/elasticsearch-7.12.1.jar!/org/elasticsearch/search/suggest/SuggestBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchRestHighLevelClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="165" column="32" selection-start-line="165" selection-start-column="32" selection-end-line="165" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/CountLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/service/elasticsearch/ElasticsearchRestHighLevelClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/component/RedissonTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="24">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="2" selection-start-line="19" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ServletUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/vertx/WebClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/NanoIdUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/config/MicrometerRegistryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/CommonDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shui/utils/ElasticSearchUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="115" column="30" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="30" />
         </state>
       </provider>
     </entry>

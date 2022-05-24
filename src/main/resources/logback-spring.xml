@@ -7,7 +7,7 @@
     <!--应用名称-->
     <property name="APP_NAME" value="CommonDemo"/>
     <!--日志文件保存路径-->
-    <property name="LOG_FILE_PATH" value="/Users/mac/docker/log/CommonDemo"/>
+    <property name="LOG_FILE_PATH" value="/Users/wizdom-lcr/docker/log/CommonDemo"/>
     <contextName>${APP_NAME}</contextName>
 
     <!--每天记录日志到文件appender-->
@@ -24,14 +24,45 @@
     <!--输出到logstash的appender-->
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <!--可以访问的logstash日志收集端口-->
-        <destination>192.168.31.248:4560</destination>
+        <destination>192.168.100.248:4560</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
+        <!-- Graylog服务的地址 -->
+        <graylogHost>10.0.0.24</graylogHost>
+        <!-- UDP Input端口 -->
+        <graylogPort>12201</graylogPort>
+        <!-- 最大GELF数据块大小（单位：字节），508为建议最小值，最大值为65467 -->
+        <maxChunkSize>508</maxChunkSize>
+        <!-- 是否使用压缩 -->
+        <useCompression>true</useCompression>
+        <encoder class="de.siegmar.logbackgelf.GelfEncoder">
+            <!-- 是否发送原生的日志信息 -->
+            <includeRawMessage>false</includeRawMessage>
+            <includeMarker>true</includeMarker>
+            <includeMdcData>true</includeMdcData>
+            <includeCallerData>false</includeCallerData>
+            <includeRootCauseData>false</includeRootCauseData>
+            <!-- 是否发送日志级别的名称，否则默认以数字代表日志级别 -->
+            <includeLevelName>true</includeLevelName>
+            <shortPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%m%nopex</pattern>
+            </shortPatternLayout>
+            <fullPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%d - [%thread] %-5level %logger{35} - %msg%n</pattern>
+            </fullPatternLayout>
+
+            <!-- 配置应用名称（服务名称），通过staticField标签可以自定义一些固定的日志字段 -->
+            <staticField>app_name:dczd</staticField>
+        </encoder>
     </appender>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="LOGSTASH"/>
+        <appender-ref ref="GELF"/>
     </root>
 
 </configuration>

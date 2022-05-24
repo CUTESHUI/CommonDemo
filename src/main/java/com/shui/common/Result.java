@@ -31,7 +31,7 @@ public class Result<T> implements Serializable {
         return this;
     }
 
-    public boolean success(){
+    public boolean success() {
         return code == 0;
     }
 
@@ -52,5 +52,8 @@ public class Result<T> implements Serializable {
         this.code = 500;
         this.msg = msg;
         return this;
+    }
+
+    public Result() {
     }
 }

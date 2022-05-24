@@ -1,5 +1,5 @@
 server:
-  port: 18088
+  port: 18080
   servlet:
     context-path: /shui
 
@@ -19,7 +19,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-#      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+      #      url: jdbc:mysql://host.docker.internal:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
       url: jdbc:mysql://127.0.0.1:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
       username: root
       password: chimanloo1004
@@ -78,9 +78,9 @@ spring:
       username: admin
       password: 'chimanloo1004'
 
-  elasticsearch:
-    rest:
-      uris: 127.0.0.1:9200
+  #  elasticsearch:
+  #    rest:
+  #      uris: 192.168.100.212:9200
 
   # redis
   redis:
@@ -119,7 +119,7 @@ spring:
     url: http://127.0.0.1:8086
     user: admin
     password: admin
-    database: test
+    database: user
 
 # minio
 minio:
@@ -164,3 +164,15 @@ dynamic:
       url: jdbc:mysql://127.0.0.1:3306/eblog?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true
       username: root
       password: chimanloo1004
+  mongo:
+    list:
+      - uri: mongodb://admin:chimanloo1004@127.0.0.1/test
+        database: test
+      - uri: mongodb://admin:chimanloo1004@127.0.0.1/spider
+        database: spider
+
+elasticsearch:
+  hosts: 127.0.0.1
+  port: 9200
+  username:
+  password:

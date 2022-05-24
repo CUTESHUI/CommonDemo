@@ -51,6 +51,9 @@ public class GlobalResponseBodyAdvice implements ResponseBodyAdvice<Object> {
         if (o instanceof ErrorReponse) {
             return o;
         }
+        if (o instanceof Result) {
+            return o;
+        }
         return new Result<>().ok(o);
     }
 }
